@@ -11,12 +11,12 @@ import org.openqa.selenium.WebDriver;
 public class ScreenshotUtility {
 	WebDriver driver;
 
-	ScreenshotUtility(WebDriver driver) {
+	public ScreenshotUtility(WebDriver driver) {
 		this.driver = driver;
 
 	}
 
-	void captureScreenshot() {
+	public void captureScreenshot() {
 
 		TakesScreenshot takescreenshot = (TakesScreenshot) driver;
 		File source = takescreenshot.getScreenshotAs(OutputType.FILE);
